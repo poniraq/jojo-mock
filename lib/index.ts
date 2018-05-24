@@ -14,14 +14,14 @@ interface MockConfig {
 const MockServer = function(config: MockConfig): Application {
     const app: Application = express()
 
+    if (config.proxy) {
+        app.use(ProxyRouter(config.proxy))
+    }
     if (config.api) {
         app.use(ApiRouter(config.api))
     }
     if (config.database) {
         app.use(DatabaseRouter(config.database))
-    }
-    if (config.proxy) {
-        app.use(ProxyRouter(config.proxy))
     }
 
     return app

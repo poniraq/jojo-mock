@@ -2,7 +2,7 @@ import { Router } from 'express'
 const requestProxy = require('express-request-proxy')
 
 export interface ProxyConfig {
-    enable?: boolean
+    enable: boolean
     host: string
     
     routes: {

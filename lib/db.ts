@@ -15,8 +15,12 @@ export const DatabaseRouter = function (config: DatabaseConfig | DatabaseConfig[
     }
 
     for (const dbconfig of config) {
+        if (typeof dbconfig.data === 'string') {
+            dbconfig.data = path.resolve(__dirname, dbconfig.data)
+        }
+
         router.use(
-            path.resolve(__dirname, dbconfig.path),
+            dbconfig.path,
             JsonServer.router(dbconfig.data)
         )
     }

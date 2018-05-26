@@ -1,16 +1,24 @@
 {
   "name": "jojo-mock",
   "version": "1.0.4",
-  "description": "",
+  "description": "Simple mock-server based on json-server & express-request-proxy",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "publish": "changelog",
+    "prepublishOnly": "npm run build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "mock", "json-server", "proxy"
+  ],
+  "homepage": "https://github.com/poniraq/jojo-mock",
+  "repository": "github:poniraq/jojo-mock",
+  "author": {
+    "name": "poniraq",
+    "email": "poniraq@gmail.com"
+  },
+  "license": "WTFPL",
   "dependencies": {
     "@types/express": "^4.11.1",
     "@types/lodash": "^4.14.109",

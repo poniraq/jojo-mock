@@ -1,6 +1,6 @@
 {
   "name": "jojo-mock",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simple mock-server based on json-server & express-request-proxy",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,7 +10,9 @@
     "prepublishOnly": "npm run build"
   },
   "keywords": [
-    "mock", "json-server", "proxy"
+    "mock",
+    "json-server",
+    "proxy"
   ],
   "homepage": "https://github.com/poniraq/jojo-mock",
   "repository": "github:poniraq/jojo-mock",

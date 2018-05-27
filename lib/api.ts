@@ -9,7 +9,7 @@ export const ApiRouter = function (config: ApiConfig): Router {
     const apiRouter: Router = Router()
 
     for (const router of config.routers) {
-        router.use(config.path, router)
+        apiRouter.use(config.path, router)
     }
 
     return apiRouter

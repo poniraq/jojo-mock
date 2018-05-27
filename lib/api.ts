@@ -6,13 +6,13 @@ export interface ApiConfig {
 }
 
 export const ApiRouter = function (config: ApiConfig): Router {
-    const router: Router = Router()
+    const apiRouter: Router = Router()
 
     for (const router of config.routers) {
         router.use(config.path, router)
     }
 
-    return router
+    return apiRouter
 }
 
 export default ApiRouter

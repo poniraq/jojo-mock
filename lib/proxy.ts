@@ -9,6 +9,8 @@ export interface ProxyConfig {
         url: string
         options?: Object
     }[]
+
+    priority?: number
 }
 
 

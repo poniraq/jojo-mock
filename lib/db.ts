@@ -1,10 +1,11 @@
 import JsonServer = require('json-server')
 import { Router } from 'express'
-import * as path from 'path'
 
 export interface DatabaseConfig {
     path: string
     data: string | JSON
+
+    priority?: number
 }
 
 export const DatabaseRouter = function (config: DatabaseConfig | DatabaseConfig[]): Router {

@@ -4,6 +4,8 @@ import { Router } from 'express'
 export interface StaticConfig {
     path: string
     dir: string
+
+    priority?: number
 }
 
 export const StaticRouter = function (config: StaticConfig | StaticConfig[]): Router {

@@ -3,6 +3,8 @@ import { Router } from 'express';
 export interface ApiConfig {
     path: string
     routers: Router[]
+
+    priority?: number
 }
 
 export const ApiRouter = function (config: ApiConfig): Router {

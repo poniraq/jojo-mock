@@ -1,6 +1,6 @@
 {
   "name": "jojo-mock",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Simple mock-server based on json-server & express-request-proxy",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
